@@ -1,0 +1,79 @@
+html, body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+:root{
+    --color:#3F7B76;
+    --police:Georgia, 'Times New Roman', Times, serif;
+    /* --taille:; */
+}
+
+body{
+    background-color:var(--color);
+    /* background-image: url(./images/restaurant.webp); */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    .logo{
+        width:200px;
+        height: auto;
+    }
+    .profil{
+        width: 20rem;
+        height:300px;
+        outline: solid rgb(51, 123, 123);
+        border-radius: 100%;
+        border-style:inset;
+    }
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    p{
+        color:#fff;
+        font-family: var(--police);
+        font-size: 20px;
+    }
+    button{
+        background-color: #fff;
+        padding: 5px 20px;
+        font-size: 16px;
+        font-family: var(--police);
+        border:none;
+        /* border-style:inset; */
+        border-radius: 15px;
+        &:hover{
+            background-color:rgb(47, 121, 225);
+        }
+        &:active{
+            background-color: green;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* &::before{
+            content:"Bonjour";
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            &::before{
+                opacity: 1;
+            }
+        }
+        &::after{
+            content: "Bienvenue";
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            &::after{
+                opacity: 1;
+            }
+        } */
+    }
+}
